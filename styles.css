@@ -1,105 +1,69 @@
-/* General Reset */
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 body {
+    display: flex;
+    justify-content: center;
     font-family: 'Space Grotesk', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+    margin: 0;
+    background: #4e54c8;
+    color: #b73e3e;
+    transition: background 0.5s ease-in-out; /* Smooth transition for background */
+}
+
+
+.container {
+    
     text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Section Styling */
-.section {
-    padding: 4rem 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #6a11cb;
-}
-
-/* Portfolio Section */
-.portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.portfolio-item {
-    width: 300px;
-    padding: 1rem;
-    border: 1px solid #ddd;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
 }
 
-.portfolio-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.portfolio-item p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Contact Section */
-.contact-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #6a11cb;
-    color: white;
-    text-decoration: none;
+input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 10px;
     border-radius: 5px;
-}
-
-.contact-button:hover {
-    background-color: #2575fc;
-}
-
-/* Footer */
-.footer {
-    padding: 1rem;
-    background-color: #333;
-    color: white;
+    border: none;
+    outline: none;
     text-align: center;
 }
 
-.footer p {
-    font-size: 0.9rem;
+button {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff303e;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
