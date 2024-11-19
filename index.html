@@ -1,21 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aryan Rao Kaveti's Portfolio">
+  <title>Aryan Rao Kaveti - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Guess the Number</h1>
-        <p id="instructions">Guess a number between 1 and 100!</p>
-        <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
-        <button onclick="checkGuess()">Check</button>
-        <p id="result"></p>
-        <button onclick="resetGame()" class="reset-btn">Play Again</button>
+    
+  <header>
+    
+    <div class="hero-section">
+    <img class="profile-image" src="your-image.PNG"/>
+      <div class="hero-content">
+        <h1>Hi, I'm Aryan Rao Kaveti</h1>
+        <p>A passionate coder, creative thinker, and a sports enthusiast</p>
+      </div>
+      <!-- <div class="rotating-text">
+        <p>CSS Animation is</p>
+        <p>
+          <span class="word alizarin">awesome.</span>
+          <span class="word wisteria">beautiful.</span>
+          <span class="word peter-river">creative.</span>
+          <span class="word emerald">fabulous.</span>
+          <span class="word sun-flower">interesting.</span>
+        </p>
+      </div> -->
     </div>
-    <script src="script.js"></script>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student in the 11th grade at DPS Gandhinagar, pursuing Computer Science. I have a passion for coding, technology, and innovative solutions. My skills include programming in Python, Java, HTML, CSS, and creating functional websites and applications. With a Gold Medal in the SOF English Olympiad and multiple accolades in table tennis, I am dedicated to excelling both academically and in extracurriculars.
+    </p>
+  </section>
+
+  <section class="achievements" id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <div class="grid">
+      <div class="achievement-card">
+        <img src="certificate1.jpg" alt="SOF Gold">
+        <p>Gold Medal in SOF English Olympiad</p>
+      </div>
+      <div class="achievement-card">
+        <img src="certificate2.jpg" alt="CyberWizard">
+        <p>1st Place in CyberWizard Coding Competition</p>
+      </div>
+      <div class="achievement-card">
+        <img src="certificate3.jpg" alt="KMK Victory">
+        <p>Won Khel Mahakumbh twice</p>
+      </div>
+      <div class="achievement-card">
+        <img src="certificate4.jpg" alt="CBSE Nationals">
+        <p>Top 16 in CBSE National Table Tennis Championship</p>
+      </div>
+      <div class="achievement-card">
+        <img src="certificate5.jpg" alt="District Champion">
+        <p>SGFI District Champion twice</p>
+      </div>
+      <div class="achievement-card">
+        <img src="certificate6.jpg" alt="Leadership in Table Tennis">
+        <p>Captain of School Table Tennis Team</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="creative-innovation" id="creative">
+    <h2 class="animated-text">Creative, Innovative, Driven</h2>
+    <p>
+      My projects reflect my passion for problem-solving, creativity, and innovation. I am always looking for new ways to improve and create solutions that make a difference. Whether through coding, web development, or sports, I thrive on challenges and am committed to delivering excellence.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skill-set">
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Frameworks</h3>
+        <ul>
+          <li>Git</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities" id="activities">
+    <h2>Extracurricular Activities</h2>
+    <div class="activity-list">
+      <div class="activity-item">
+        <h3>Table Tennis Captain</h3>
+        <p>I led my school team to victory in several prestigious inter-school tournaments, including the Kaleidoscope and SGFI championships. 
+            Additionally, I secured a spot in the top 16 at the CBSE National Table Tennis Championship, 
+            where I competed against top players from across India as well as international competitors from countries like Russia, Qatar, and the UAE.
+        </p>
+      </div>
+      <div class="activity-item">
+        <h3>Drama & Theater</h3>
+        <p>Participated and Performed in Shakespearean and Cultural plays in school.</p>
+      </div>
+      <div class="activity-item">
+        <h3>Music</h3>
+        <p>Performed as a pianist at open mics and school events.</p>
+      </div>
+      <div class="activity-item">
+        <h3>Leadership Roles</h3>
+        <p>I’ve had the privilege of leading several sports teams as captain, where I not only guided my teammates but also learned the value of teamwork and perseverance. 
+            Alongside this, I’ve also taken on leadership roles in academic projects, where I’ve worked with my peers to bring our ideas to life, blending collaboration and creativity to achieve our goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
